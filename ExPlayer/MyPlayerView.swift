@@ -32,20 +32,23 @@ final class MyPlayerView: UIView {
   private let player = AVPlayer()
   var url: URL? {
     didSet {
-      self.stop()
-      guard let url = self.url else {
-        return self.player.replaceCurrentItem(with: nil)
-      }
-      self.setPlayerItem(.init(url: url))
-    }
-  }
-  var item: AVPlayerItem? = nil {
-    didSet {
-      self.player.replaceCurrentItem(with: self.item)
-      self.itemDisposeBag = DisposeBag()
-      self.item?.rx.didPlayToEnd
-        .bind(with: self) { ss, _ in ss.player.play() }
+      guard let url = self.url else { return self.player.replaceCurrentItem(with: nil) }
+      
+      let item = AVPlayerItem(url: url)
+      item.rx.status
+        .filter { $0 == .readyToPlay }
+        .observe(on: MainScheduler.asyncInstance)
+        .map { _ in item.asset.duration.seconds }
+        .bind { print("전체 시간 = \($0)")  }
         .disposed(by: self.itemDisposeBag)
+
+      self.player.rx
+        .periodicTimeObserver(interval: .init(seconds: 0.5, preferredTimescale: Int32(NSEC_PER_SEC)))
+        .map(\.seconds)
+        .bind { print("경과 시간 = \($0)") }
+        .disposed(by: self.disposeBag)
+      
+      self.player.replaceCurrentItem(with: item)
     }
   }
   
@@ -86,22 +89,5 @@ final class MyPlayerView: UIView {
   func stop() {
     self.player.pause()
     self.player.seek(to: .zero)
-  }
-  
-  private func setPlayerItem(_ item: AVPlayerItem) {
-    defer { self.player.replaceCurrentItem(with: item) }
-    
-    item.rx.status
-      .filter { $0 == .readyToPlay }
-      .observe(on: MainScheduler.asyncInstance)
-      .map { _ in item.asset.duration.seconds }
-      .bind { print("전체 시간 = \($0)")  }
-      .disposed(by: self.itemDisposeBag)
-    
-    self.player.rx
-      .periodicTimeObserver(interval: .init(seconds: 0.5, preferredTimescale: Int32(NSEC_PER_SEC)))
-      .map(\.seconds)
-      .bind { print("경과 시간 = \($0)") }
-      .disposed(by: self.disposeBag)
   }
 }
