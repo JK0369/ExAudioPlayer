@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370FBFB87E91F2E14AA22ABC /* Pods_ExPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338A70A9B20AA1C6047D10B3 /* Pods_ExPlayer.framework */; };
 		C6AC8842281BDCB70005E2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8841281BDCB70005E2B6 /* AppDelegate.swift */; };
 		C6AC8844281BDCB70005E2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8843281BDCB70005E2B6 /* SceneDelegate.swift */; };
-		C6AC8846281BDCB70005E2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8845281BDCB70005E2B6 /* ViewController.swift */; };
 		C6AC8849281BDCB70005E2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC8847281BDCB70005E2B6 /* Main.storyboard */; };
 		C6AC884B281BDCB80005E2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AC884A281BDCB80005E2B6 /* Assets.xcassets */; };
 		C6AC884E281BDCB80005E2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AC884C281BDCB80005E2B6 /* LaunchScreen.storyboard */; };
+		C6AC8858281BDCF40005E2B6 /* MyAudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8855281BDCF40005E2B6 /* MyAudioPlayerView.swift */; };
+		C6AC8859281BDCF40005E2B6 /* MyPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8856281BDCF40005E2B6 /* MyPlayerView.swift */; };
+		C6AC885A281BDCF40005E2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC8857281BDCF40005E2B6 /* ViewController.swift */; };
+		C6AC885C281BDD6D0005E2B6 /* Rx+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AC885B281BDD6D0005E2B6 /* Rx+Extension.swift */; };
+		C6AC885E281BE0990005E2B6 /* SoundHelix-Song-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6AC885D281BE0990005E2B6 /* SoundHelix-Song-6.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2236EA365CE5856EB86825E1 /* Pods-ExPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPlayer.release.xcconfig"; path = "Target Support Files/Pods-ExPlayer/Pods-ExPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		338A70A9B20AA1C6047D10B3 /* Pods_ExPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B389427D57C446B5E5B94530 /* Pods-ExPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExPlayer.debug.xcconfig"; path = "Target Support Files/Pods-ExPlayer/Pods-ExPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		C6AC883E281BDCB70005E2B6 /* ExPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6AC8841281BDCB70005E2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6AC8843281BDCB70005E2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C6AC8845281BDCB70005E2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6AC8848281BDCB70005E2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6AC884A281BDCB80005E2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6AC884D281BDCB80005E2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6AC884F281BDCB80005E2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6AC8855281BDCF40005E2B6 /* MyAudioPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAudioPlayerView.swift; sourceTree = "<group>"; };
+		C6AC8856281BDCF40005E2B6 /* MyPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlayerView.swift; sourceTree = "<group>"; };
+		C6AC8857281BDCF40005E2B6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6AC885B281BDD6D0005E2B6 /* Rx+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rx+Extension.swift"; sourceTree = "<group>"; };
+		C6AC885D281BE0990005E2B6 /* SoundHelix-Song-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SoundHelix-Song-6.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370FBFB87E91F2E14AA22ABC /* Pods_ExPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E68A784FE8F97E804DA9613 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				338A70A9B20AA1C6047D10B3 /* Pods_ExPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EE978695684DC6592E3FDBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B389427D57C446B5E5B94530 /* Pods-ExPlayer.debug.xcconfig */,
+				2236EA365CE5856EB86825E1 /* Pods-ExPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6AC8835281BDCB70005E2B6 = {
 			isa = PBXGroup;
 			children = (
 				C6AC8840281BDCB70005E2B6 /* ExPlayer */,
 				C6AC883F281BDCB70005E2B6 /* Products */,
+				9EE978695684DC6592E3FDBA /* Pods */,
+				8E68A784FE8F97E804DA9613 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +88,13 @@
 		C6AC8840281BDCB70005E2B6 /* ExPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				C6AC885D281BE0990005E2B6 /* SoundHelix-Song-6.mp3 */,
+				C6AC885B281BDD6D0005E2B6 /* Rx+Extension.swift */,
+				C6AC8855281BDCF40005E2B6 /* MyAudioPlayerView.swift */,
+				C6AC8856281BDCF40005E2B6 /* MyPlayerView.swift */,
+				C6AC8857281BDCF40005E2B6 /* ViewController.swift */,
 				C6AC8841281BDCB70005E2B6 /* AppDelegate.swift */,
 				C6AC8843281BDCB70005E2B6 /* SceneDelegate.swift */,
-				C6AC8845281BDCB70005E2B6 /* ViewController.swift */,
 				C6AC8847281BDCB70005E2B6 /* Main.storyboard */,
 				C6AC884A281BDCB80005E2B6 /* Assets.xcassets */,
 				C6AC884C281BDCB80005E2B6 /* LaunchScreen.storyboard */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6AC8852281BDCB80005E2B6 /* Build configuration list for PBXNativeTarget "ExPlayer" */;
 			buildPhases = (
+				1195FE30C3F3C40C4FA3E0FC /* [CP] Check Pods Manifest.lock */,
 				C6AC883A281BDCB70005E2B6 /* Sources */,
 				C6AC883B281BDCB70005E2B6 /* Frameworks */,
 				C6AC883C281BDCB70005E2B6 /* Resources */,
+				54B1FF2DBED038685DCCFE33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6AC884E281BDCB80005E2B6 /* LaunchScreen.storyboard in Resources */,
+				C6AC885E281BE0990005E2B6 /* SoundHelix-Song-6.mp3 in Resources */,
 				C6AC884B281BDCB80005E2B6 /* Assets.xcassets in Resources */,
 				C6AC8849281BDCB70005E2B6 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +172,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1195FE30C3F3C40C4FA3E0FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54B1FF2DBED038685DCCFE33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPlayer/Pods-ExPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExPlayer/Pods-ExPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExPlayer/Pods-ExPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6AC883A281BDCB70005E2B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6AC8846281BDCB70005E2B6 /* ViewController.swift in Sources */,
+				C6AC885A281BDCF40005E2B6 /* ViewController.swift in Sources */,
 				C6AC8842281BDCB70005E2B6 /* AppDelegate.swift in Sources */,
 				C6AC8844281BDCB70005E2B6 /* SceneDelegate.swift in Sources */,
+				C6AC885C281BDD6D0005E2B6 /* Rx+Extension.swift in Sources */,
+				C6AC8858281BDCF40005E2B6 /* MyAudioPlayerView.swift in Sources */,
+				C6AC8859281BDCF40005E2B6 /* MyPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +366,7 @@
 		};
 		C6AC8853281BDCB80005E2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B389427D57C446B5E5B94530 /* Pods-ExPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +395,7 @@
 		};
 		C6AC8854281BDCB80005E2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2236EA365CE5856EB86825E1 /* Pods-ExPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
