@@ -5,4 +5,5 @@ target 'ExPlayer' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxAVFoundation'
 end

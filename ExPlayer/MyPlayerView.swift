@@ -9,6 +9,7 @@ import AVFoundation
 import RxSwift
 import RxCocoa
 import UIKit
+import RxAVFoundation
 
 final class MyPlayerView: UIView {
   private let label: UILabel = {
